@@ -1,7 +1,9 @@
 @import "../base/_variables";
+@import "../base/colores";
 header {
     .img-header {
         padding: 1rem;
+        text-align: $centrar;
     }
     .img-header:hover {
         transform: scale(1.2);
@@ -14,14 +16,17 @@ header {
         text-transform: uppercase;
         padding-top: 4rem;
         font-weight: bold;
+        text-align: $centrar;
     }
     main h2 {
         padding: $padding;
         font-weight: bold;
+        text-align: center;
     }
     .a-nav {
         font-size: 1.5rem;
         font-weight: bold;
+        text-align: $centrar;
     }
     .a-nav:hover {
         transform: scale(1.1);
@@ -31,6 +36,17 @@ header {
     }
     .bg-pag {
         background-color: rgb(238, 227, 168);
+    }
+    @media (max-width:991px) {
+        .img-header {
+            text-align: center;
+        }
+        .h1-header {
+            text-align: center;
+        }
+        .a-nav {
+            text-align: center;
+        }
     }
 }
 

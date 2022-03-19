@@ -1,5 +1,6 @@
 header .img-header {
   padding: 1rem;
+  text-align: center;
 }
 header .img-header:hover {
   transform: scale(1.2);
@@ -12,14 +13,17 @@ header .h1-header {
   text-transform: uppercase;
   padding-top: 4rem;
   font-weight: bold;
+  text-align: center;
 }
 header main h2 {
   padding: 1rem;
   font-weight: bold;
+  text-align: center;
 }
 header .a-nav {
   font-size: 1.5rem;
   font-weight: bold;
+  text-align: center;
 }
 header .a-nav:hover {
   transform: scale(1.1);
@@ -29,6 +33,17 @@ header .a-nav-activo {
 }
 header .bg-pag {
   background-color: #eee3a8;
+}
+@media (max-width: 991px) {
+  header .img-header {
+    text-align: center;
+  }
+  header .h1-header {
+    text-align: center;
+  }
+  header .a-nav {
+    text-align: center;
+  }
 }
 
 .bg-pag {
@@ -48,14 +63,10 @@ main .boton-socios:hover {
   color: black;
   transform: scale(1.2);
 }
-main .padding-img {
-  width: 350px;
-  height: 250px;
-  box-shadow: 30px 15px 30px;
-  margin: 1rem 0 1rem 1rem;
-}
 main .card img {
-  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  height: auto;
 }
 @media (max-width: 991px) {
   main .boton-socios {
@@ -101,6 +112,9 @@ footer .redes a i:hover {
   transform: scale(1.2);
 }
 footer .footer .maps .mapouter {
+  display: inline-block;
+  max-width: 300px;
+  height: auto;
   padding: 2rem;
   text-align: right;
   border: 2px soli #0a0909;
@@ -114,6 +128,15 @@ footer .gmap_canvas {
   overflow: hidden;
   height: 305px;
   width: 364px;
+}
+@media (max-width: 394px) {
+  footer .redes h3 {
+    text-align: center;
+  }
+  footer .redes a i {
+    display: block;
+    text-decoration: none;
+  }
 }
 
 .copy {
@@ -155,7 +178,7 @@ footer .gmap_canvas {
 }
 
 .card-p {
-  border: 1px solid black;
+  border: 1px solid olive;
   margin: 20px;
   box-shadow: 25px 10px 20px #242020;
 }
@@ -164,14 +187,24 @@ footer .gmap_canvas {
   padding-top: 3rem;
 }
 
+@media (max-width: 991px) {
+  .h2-club {
+    text-align: center;
+  }
+}
 .main-contacto {
   border: 2px solid #332e2e;
   background-color: #f7efc5;
-  box-shadow: 10px 6px 10px black;
+  box-shadow: 10px 6px 10px olive;
 }
 
 .main-contacto form {
   padding: 2rem;
+}
+
+.main-contacto h3 {
+  padding: 1rem;
+  text-align: center;
 }
 
 .info {
@@ -189,6 +222,7 @@ footer .gmap_canvas {
   background-color: black;
   font-weight: bold;
   box-shadow: 10px 6px 10px black;
+  border: 1px solid yellow;
 }
 
 .btn-socios:hover {
@@ -196,11 +230,11 @@ footer .gmap_canvas {
   background-color: yellow;
   transition: 1s;
   transform: scale(1.2);
+  border: 1px solid black;
 }
 
 .h2-socios {
-  padding: 4rem 0;
-  box-shadow: 10px 6px 10px black;
+  padding: 4rem 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

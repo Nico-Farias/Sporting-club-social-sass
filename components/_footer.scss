@@ -1,4 +1,5 @@
 @import "../base/_variables";
+@import "../base/colores";
 footer {
     .footer {
         padding: $padding;
@@ -30,6 +31,9 @@ footer {
         ;
     }
     .footer .maps .mapouter {
+        display: inline-block;
+        max-width: 300px;
+        height: auto;
         padding: 2rem;
         text-align: right;
         border: 2px soli rgb(10, 9, 9);
@@ -43,6 +47,15 @@ footer {
         overflow: hidden;
         height: 305px;
         width: 364px;
+    }
+    @media (max-width:394px) {
+        .redes h3 {
+            text-align: center;
+        }
+        .redes a i {
+            display: block;
+            text-decoration: none;
+        }
     }
 }
 
