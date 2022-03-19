@@ -1,0 +1,20 @@
+@import "../base/_variables";
+.main-contacto {
+    border: 2px solid rgb(51, 46, 46);
+    background-color: rgb(247, 239, 197);
+    box-shadow: 10px 6px 10px black;
+}
+
+.main-contacto form {
+    padding: 2rem;
+}
+
+.info {
+    padding-top: 3rem;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.info h3 {
+    font-weight: bold;
+}

@@ -1,0 +1,18 @@
+@import "../base/_variables";
+.card p {
+    font-size: 1rem;
+}
+
+.card-p:hover {
+    transform: scale(1.1);
+}
+
+.card-p {
+    border: 1px solid black;
+    margin: 20px;
+    box-shadow: 25px 10px 20px rgb(36, 32, 32);
+}
+
+.h2-club {
+    padding-top: 3rem;
+}

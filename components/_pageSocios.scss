@@ -1,0 +1,19 @@
+@import "../base/_variables";
+.btn-socios {
+    color: yellow;
+    background-color: black;
+    font-weight: bold;
+    box-shadow: 10px 6px 10px black;
+}
+
+.btn-socios:hover {
+    color: black;
+    background-color: yellow;
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+.h2-socios {
+    padding: 4rem 0;
+    box-shadow: 10px 6px 10px black;
+}
