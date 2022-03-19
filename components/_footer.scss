@@ -1,7 +1,7 @@
 @import "../base/_variables";
 footer {
     .footer {
-        padding: 1rem;
+        padding: $padding;
     }
     .redes {
         margin-top: auto;
@@ -24,9 +24,10 @@ footer {
     .redes a i:hover {
         cursor: pointer;
         color: rgb(36, 36, 32);
-        background-color: yellow;
+        background-color: $Asaturado;
         border-radius: 10rem;
-        transform: scale(1.2);
+        transform: $tranform;
+        ;
     }
     .footer .maps .mapouter {
         padding: 2rem;
@@ -47,7 +48,7 @@ footer {
 
 .copy {
     font-size: 2rem;
-    text-align: center;
+    text-align: $centrar;
     color: rgb(216, 216, 56);
     background-color: black;
     margin-bottom: 0;

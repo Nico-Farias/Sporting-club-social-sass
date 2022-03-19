@@ -2,15 +2,15 @@
 main {
     .boton-socios {
         margin-top: 15rem;
-        color: yellow;
+        color: $amarillo;
         font-weight: bold;
-        background-color: black;
+        background-color: $negro;
         text-transform: uppercase;
-        box-shadow: 10px 6px 10px black;
+        box-shadow: 10px 6px 10px $negro;
     }
     .boton-socios:hover {
-        background-color: yellow;
-        color: black;
+        background-color: $Asaturado;
+        color: $Nsaturado;
         transform: scale(1.2);
     }
     .padding-img {
