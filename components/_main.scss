@@ -1,6 +1,12 @@
 @import"../base/variables";
 @import "../base/colores";
 main {
+    h2 {
+        text-align: $centrar;
+        font-weight: $font-bold;
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
     .boton-socios {
         margin-top: 15rem;
         color: $amarillo;
