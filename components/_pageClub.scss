@@ -4,13 +4,13 @@
     font-size: 1rem;
 }
 
-.card-p:hover {
+.imagen-club:hover {
     transform: scale(1.1);
 }
 
 .card-p {
+    display: inline-block;
     border: 1px solid $mix;
-    margin: 20px;
     box-shadow: 25px 10px 20px rgb(36, 32, 32);
 }
 
