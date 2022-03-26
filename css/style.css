@@ -10,10 +10,11 @@ header .img-header img {
   height: 150px;
 }
 header .h1-header {
-  text-transform: uppercase;
-  padding-top: 4rem;
-  font-weight: bold;
+  text-transform: scale(1.2);
   text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-top: 4rem;
 }
 header main h2 {
   padding: 1rem;
@@ -51,9 +52,10 @@ header .bg-pag {
 }
 
 main h2 {
+  text-transform: scale(1.2);
   text-align: center;
-  font-weight: bold;
   font-size: 2rem;
+  font-weight: bold;
   padding: 1rem 0;
 }
 main .boton-socios {
@@ -175,6 +177,10 @@ footer .gmap_canvas {
   font-weight: bold;
 }
 
+img .imagen-club, .card-p {
+  display: inline-block;
+}
+
 .card p {
   font-size: 1rem;
 }
@@ -184,13 +190,11 @@ footer .gmap_canvas {
 }
 
 .card-p {
-  display: inline-block;
   border: 1px solid olive;
   box-shadow: 25px 10px 20px #242020;
 }
 
 img .imagen-club {
-  display: inline-block;
   width: auto;
   height: 213px;
 }
@@ -247,6 +251,10 @@ img .imagen-club {
 
 .h2-socios {
   padding: 4rem 1rem;
+}
+
+.card-p, img .imagen-club {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,6 @@
 @import "../base/_variables";
 @import "../base/colores";
+@import "../base/extends";
 .card p {
     font-size: 1rem;
 }
@@ -9,13 +10,13 @@
 }
 
 .card-p {
-    display: inline-block;
+    @extend %disposicionBlock;
     border: 1px solid $mix;
     box-shadow: 25px 10px 20px rgb(36, 32, 32);
 }
 
 img .imagen-club {
-    display: inline-block;
+    @extend %disposicionBlock;
     width: auto;
     height: 213px;
 }

@@ -1,0 +1,6 @@
+@mixin titulos($tranfom, $align, $size, $weight) {
+    text-transform: $tranform;
+    text-align: $align;
+    font-size: $size;
+    font-weight: $weight;
+}
