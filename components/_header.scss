@@ -11,12 +11,16 @@ header {
         transform: scale(1.2);
     }
     .img-header img {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
     .h1-header {
-        @include titulos(uppercase, center, 2.5rem, bold);
-        padding-top: 4rem;
+        @include titulos(uppercase, center, 3rem, bold);
+        padding-top: 5rem;
+        padding-right: 2rem;
+        text-transform: uppercase;
+        font-family: 'Dela Gothic One', cursive;
+        font-family: 'Lobster', cursive;
     }
     main h2 {
         padding: $padding;
@@ -24,12 +28,16 @@ header {
         text-align: map-get($header, centrar);
     }
     .a-nav {
+        font-family: 'Boogaloo', cursive;
         font-size: 1.5rem;
         font-weight: bold;
         text-align: $centrar;
     }
-    .a-nav:hover {
-        transform: scale(1.1);
+    .a-nav:hover,
+    .a-nav:focus {
+        box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+        transform: translateY(-0.25em);
+        color: #ffa260;
     }
     .a-nav-activo {
         background-color: map-get($header, bg-header);
@@ -48,8 +56,15 @@ header {
             text-align: center;
         }
     }
+    @media (max-width:573px) {
+        .h1-header {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
 }
 
 .bg-pag {
-    background-color: $bg-pag;
+    background: rgb(241, 245, 199);
+    background: linear-gradient(103deg, rgba(241, 245, 199, 1) 16%, rgba(242, 246, 153, 0.8995973389355743) 36%, rgba(238, 241, 103, 0.8071603641456583) 61%, rgba(187, 187, 28, 0.5886729691876751) 91%);
 }

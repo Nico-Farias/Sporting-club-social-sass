@@ -8,9 +8,10 @@ footer {
         margin-top: auto;
         margin-bottom: auto;
         text-align: center;
-        background-color: rgb(238, 227, 168);
     }
     .redes h3 {
+        font-family: 'Lobster', cursive;
+        font-family: 'Permanent Marker', cursive;
         color: rgb(12, 12, 10);
         font-size: 4rem;
         font-weight: bold;
@@ -50,16 +51,23 @@ footer {
     }
     @media (max-width:394px) {
         .redes h3 {
+            font-size: 2rem;
             text-align: center;
+        }
+        .footer .mapouter {
+            display: none;
         }
         .redes a i {
             display: block;
             text-decoration: none;
+            font-size: 3rem;
         }
     }
 }
 
 .copy {
+    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Lobster', cursive;
     font-size: 2rem;
     text-align: $centrar;
     color: rgb(216, 216, 56);

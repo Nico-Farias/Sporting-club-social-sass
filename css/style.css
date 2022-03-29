@@ -6,15 +6,19 @@ header .img-header:hover {
   transform: scale(1.2);
 }
 header .img-header img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
 }
 header .h1-header {
   text-transform: scale(1.2);
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
-  padding-top: 4rem;
+  padding-top: 5rem;
+  padding-right: 2rem;
+  text-transform: uppercase;
+  font-family: "Dela Gothic One", cursive;
+  font-family: "Lobster", cursive;
 }
 header main h2 {
   padding: 1rem;
@@ -22,12 +26,16 @@ header main h2 {
   text-align: center;
 }
 header .a-nav {
+  font-family: "Boogaloo", cursive;
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
 }
-header .a-nav:hover {
-  transform: scale(1.1);
+header .a-nav:hover,
+header .a-nav:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  color: #ffa260;
 }
 header .a-nav-activo {
   background-color: #eee3a8;
@@ -46,9 +54,16 @@ header .bg-pag {
     text-align: center;
   }
 }
+@media (max-width: 573px) {
+  header .h1-header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
 
 .bg-pag {
-  background-color: #eee3a8;
+  background: #f1f5c7;
+  background: linear-gradient(103deg, #f1f5c7 16%, rgba(242, 246, 153, 0.8995973389) 36%, rgba(238, 241, 103, 0.8071603641) 61%, rgba(187, 187, 28, 0.5886729692) 91%);
 }
 
 main h2 {
@@ -57,8 +72,12 @@ main h2 {
   font-size: 2rem;
   font-weight: bold;
   padding: 1rem 0;
+  font-family: "Lobster", cursive;
+  font-family: "Permanent Marker", cursive;
 }
 main .boton-socios {
+  font-family: "Lobster", cursive;
+  font-family: "Permanent Marker", cursive;
   margin-top: 15rem;
   color: yellow;
   font-weight: bold;
@@ -76,6 +95,15 @@ main .card img {
   width: 100%;
   height: auto;
 }
+main .card h5,
+main .card h3 {
+  font-family: "Boogaloo", cursive;
+  font-size: 2rem;
+}
+main .card p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 @media (max-width: 991px) {
   main .boton-socios {
     margin-top: 1rem;
@@ -90,6 +118,11 @@ main .card img {
     margin-right: 12rem;
   }
 }
+@media (max-width: 400px) {
+  main .boton-socios:hover {
+    transform: none;
+  }
+}
 
 footer .footer {
   padding: 1rem;
@@ -98,9 +131,10 @@ footer .redes {
   margin-top: auto;
   margin-bottom: auto;
   text-align: center;
-  background-color: #eee3a8;
 }
 footer .redes h3 {
+  font-family: "Lobster", cursive;
+  font-family: "Permanent Marker", cursive;
   color: #0c0c0a;
   font-size: 4rem;
   font-weight: bold;
@@ -139,15 +173,22 @@ footer .gmap_canvas {
 }
 @media (max-width: 394px) {
   footer .redes h3 {
+    font-size: 2rem;
     text-align: center;
+  }
+  footer .footer .mapouter {
+    display: none;
   }
   footer .redes a i {
     display: block;
     text-decoration: none;
+    font-size: 3rem;
   }
 }
 
 .copy {
+  font-family: "Dela Gothic One", cursive;
+  font-family: "Lobster", cursive;
   font-size: 2rem;
   text-align: center;
   color: #d8d838;
@@ -219,21 +260,27 @@ img .imagen-club {
 }
 
 .main-contacto h3 {
+  font-family: "Lobster", cursive;
+  font-family: "Permanent Marker", cursive;
   padding: 1rem;
   text-align: center;
 }
 
 .info {
+  font-family: "Boogaloo", cursive;
   padding-top: 3rem;
   font-weight: 400;
   font-size: 1.3rem;
 }
 
 .info h3 {
+  font-family: "Lobster", cursive;
   font-weight: bold;
 }
 
 .btn-socios {
+  font-family: "Lobster", cursive;
+  font-family: "Permanent Marker", cursive;
   color: yellow;
   background-color: black;
   font-weight: bold;

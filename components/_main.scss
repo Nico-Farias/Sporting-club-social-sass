@@ -5,8 +5,12 @@ main {
     h2 {
         @include titulos(uppercase, center, 2rem, bold, );
         padding: 1rem 0;
+        font-family: 'Lobster', cursive;
+        font-family: 'Permanent Marker', cursive;
     }
     .boton-socios {
+        font-family: 'Lobster', cursive;
+        font-family: 'Permanent Marker', cursive;
         margin-top: 15rem;
         color: $amarillo;
         font-weight: bold;
@@ -24,6 +28,15 @@ main {
         width: 100%;
         height: auto;
     }
+    .card h5,
+    .card h3 {
+        font-family: 'Boogaloo', cursive;
+        font-size: 2rem;
+    }
+    .card p {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
     @media (max-width:991px) {
         .boton-socios {
             margin-top: 1rem;
@@ -36,6 +49,11 @@ main {
     @media(min-width:970) {
         .h2-club {
             margin-right: 12rem;
+        }
+    }
+    @media (max-width:400px) {
+        .boton-socios:hover {
+            transform: none;
         }
     }
 }
