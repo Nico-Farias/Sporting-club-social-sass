@@ -33,6 +33,10 @@ header {
         font-weight: bold;
         text-align: $centrar;
     }
+    .btn-sesion {
+        font-size: 1.5rem;
+        color: black;
+    }
     .a-nav:hover,
     .a-nav:focus {
         box-shadow: 0 0.5em 0.5em -0.4em var(--hover);

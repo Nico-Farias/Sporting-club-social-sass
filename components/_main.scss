@@ -17,11 +17,11 @@ main {
         background-color: $negro;
         text-transform: uppercase;
         box-shadow: 10px 6px 10px $negro;
+        border: 1px solid white;
     }
     .boton-socios:hover {
         background-color: $Asaturado;
         color: $Nsaturado;
-        transform: scale(1.2);
     }
     .card img {
         display: inline-block;
