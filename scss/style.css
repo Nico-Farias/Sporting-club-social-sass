@@ -69,6 +69,10 @@ header .bg-pag {
   }
   header .a-nav {
     text-align: center;
+    color: rgba(0, 0, 0, 0.55);
+  }
+  header .nav-desktop {
+    display: none;
   }
 }
 
@@ -76,6 +80,12 @@ header .bg-pag {
   header .h1-header {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  header .nav-tablet {
+    display: none;
   }
 }
 
@@ -455,6 +465,7 @@ footer .redes a i:hover {
 
 footer .footer .maps .mapouter {
   display: inline-block;
+  overflow: hidden;
   max-width: 300px;
   height: auto;
   padding: 2rem;
@@ -483,9 +494,8 @@ footer .gmap_canvas {
     display: none;
   }
   footer .redes a i {
-    display: block;
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 

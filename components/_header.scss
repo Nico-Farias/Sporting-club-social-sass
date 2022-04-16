@@ -58,12 +58,21 @@ header {
         }
         .a-nav {
             text-align: center;
+            color: rgba(0, 0, 0, .55);
+        }
+        .nav-desktop {
+            display: none;
         }
     }
     @media (max-width:573px) {
         .h1-header {
             padding-top: 1rem;
             padding-bottom: 1rem;
+        }
+    }
+    @media (min-width:992px) {
+        .nav-tablet {
+            display: none;
         }
     }
 }

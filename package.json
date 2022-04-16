@@ -1,11 +1,18 @@
 {
-  "name": "proyecto-scs-con-sass",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "proyecto-scs-con-sass",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch scss/style.scss:css/style.css"
+    },
+    "keywords": [
+        "SASS",
+        "Gulp"
+    ],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "sass": "^1.50.0"
+    }
 }
